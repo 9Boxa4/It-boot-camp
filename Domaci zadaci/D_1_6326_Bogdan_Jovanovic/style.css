@@ -1,0 +1,159 @@
+body{
+
+background-color: rgb(238, 210, 176);
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+.container{
+    background: #FFFFFF;
+    margin: 0 auto ;
+    width: 1660px;
+    padding: 10px;
+    
+}
+.navi{
+   background:rgb(214, 173, 173) ;
+    display: flex;
+    justify-content: space-around;  
+    height: 40px;
+    padding-top: 30px;
+}
+.game{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #5bcd7d 10px;
+    background: #5bcd7d;
+    text-align: center;
+    padding:3px;
+}
+.login{
+    padding-left:30px;
+    margin-bottom: 20px;
+}
+.sig{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #5bcd7d 10px;
+    background: #5bcd7d;
+    text-align: center;
+    padding:3px;
+    margin-right: 10px;
+    
+}
+.logg{
+    padding-left: 40px;
+    width: 100%;
+    border: solid #5bcd7d 10px;
+    background: #5bcd7d;
+    text-align: center;
+    padding:10px;
+    height: 20px;
+}
+
+/* Pocinje header */
+
+
+.banner{
+    background-image:url("fotke/Hrana.jpg");
+    background-size: cover; 
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.thegame{
+font-family: 'Praise', cursive;
+font-weight: 300;
+font-size: 38px;
+
+}
+.meni{
+    width: 1640px;
+    padding: 10px;
+    background: #FFFFFF;
+    display:flex;
+    justify-content: right;
+    justify-items: right;
+    margin-bottom: 10px;
+    
+
+}
+.vrsta{
+    font-family: 'Praise', cursive;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.pice{
+    width: 400px;
+    padding-right: -50px;
+    
+}
+.Cola{
+    width:260px;
+    height: 340px;
+    border-radius: 30%;
+    
+}
+/* Predposlednji */
+
+.predposlednji{
+    background:rgb(214, 173, 173) ;
+    height: 220px;
+    padding:20px;
+}
+.predposlednji a{
+    padding:20px;
+}
+
+.predposlednji p{
+    padding:20px;
+    color:#FFFFFF;
+    font-size: 24px;
+    
+}
+.info{
+    font-weight: 600;
+}
+a:hover{
+    color:aqua;
+    cursor: pointer;
+
+    
+}
+b{
+    padding-left: 20px;
+    font-size: 24px;
+    font-family: 'Praise', cursive; 
+    font-weight: 600;
+    text-decoration: underline;
+    
+}
+
+.strele{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.strele:hover{
+    font-size: 27px;
+   
+}
+
+.pop:hover{
+    font-size:27px;
+
+}
+#skok{
+    display:none;   
+}
+
+#cross{
+        text-decoration: line-through underline;
+    }
+
+ 
+ 

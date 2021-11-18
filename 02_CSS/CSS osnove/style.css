@@ -1,0 +1,22 @@
+h3{
+    color:green;
+    text-decoration: line-through;
+}
+ p{
+     color:rgb(120, 62, 187);
+
+ }
+ #prvi{
+     text-align: right;
+     background-color: orange;
+ }
+ .zuta_pozadina{
+     background-color: yellow;
+     font-weight:bold;
+ /* }
+ body{
+     margin:50px;
+ } */
+ /* *{
+     margin:50px;
+ } */

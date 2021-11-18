@@ -1,0 +1,101 @@
+p{
+    text-align: left;
+    margin-left: 20px;
+}
+h1,p{
+	font-family: Arial, Helvetica, Sans-serif;
+}
+h3,#rn{
+	text-shadow: 1px 1px red;
+}
+.crveno{
+	color: red;
+}
+p.crveno{
+	font-style: italic;
+}
+
+div p{
+	border: red 1px dotted;
+}
+div>p{
+	background-color: lightgray;
+}
+div+p{
+	text-shadow: 1px 1px rgb(251, 255, 0);
+}
+
+div~p{
+	background-color: grey;
+}
+a[target]{
+	text-decoration: none;
+}
+a[target=_blank]{
+	color: green;
+}
+    li[class*="ns"]{
+        list-style-type: none;
+    }
+    li[class*="ns-"]{
+        font-style: italic;
+    }
+    li:first-child{
+        color: blue;
+    }
+    li:last-child{
+        color: green;
+    }
+    p::first-letter{
+        font-size: 200%;
+    }
+        p::first-line{
+            text-decoration: underline;
+        }
+        :not(p){
+            text-align: center;
+        }
+        ul::before{
+            content: "-Zapamtite ovo!";
+            color: red;
+            font-weight: bold;
+        }
+        ul::after{
+            content: "-Bitno je!";
+            color: orange;
+        }
+        tr:nth-child(2){
+            color: red;
+            background-color: lightgray;
+        }
+        tr:nth-child(odd){
+            background-color: lightblue;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        
+tr:nth-child(3n+1){
+	font-style: italic;
+	font-weight: bold;
+    background-color:green;
+}
+.link{
+	color: blue !important;
+	text-decoration: none !important;
+}
+.link:link{
+	font-weight: bold;
+}
+.link:visited{
+	color: green !important;
+}
+.link:hover{
+	color: yellow !important;
+}
+.link:active{
+	color: red !important;
+}
+input:focus{
+	background-color: yellow;
+}

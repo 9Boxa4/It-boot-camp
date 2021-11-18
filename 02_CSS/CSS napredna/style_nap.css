@@ -1,0 +1,53 @@
+.crveni_paragraf{
+    color:red;
+}
+.desno_poravnanje{
+    text-align: right;
+}
+
+/* vise elemenata sa istim svojstvom */
+
+h3, h4{
+    color:orange;
+}
+
+.drugi, #treci_paragraf{
+    background-color: yellow;
+}
+/* Prioritet
+-selektor
+-class
+-id
+ */
+ li{
+     color: green;
+ }
+ .kurs{
+     color:blue;
+ }
+ #js{
+     color:red;
+ }
+
+ /* Selektovati sve paragrafe unutar div elementa */
+
+ div p{
+     text-decoration: underline;
+ }
+
+ div .podparagraf {
+     font-weight: bold;
+ }
+ #divizija>p{
+     font-family: 'Courier New', Courier, monospace;
+ }
+
+ /* ol li:nth-child(3){
+font-style: italic;
+ } */
+ /* ol li:nth-child(3n){
+    font-weight: bold; */
+
+    ol li:nth-child(odd){
+        font-size: 40px;
+    }
