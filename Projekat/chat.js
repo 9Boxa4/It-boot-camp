@@ -27,19 +27,45 @@ class Chatroom {
             alert(`Nevalidan unos, ne smete stavljati razmake`)
         }
     }
-
     get username() {
         return this._username;
     }
-    // chat 
-    // let sendPor = document.querySelector(`#poruka`)
+    //      metoda za dodavanje poruke
+    async addChat(poruka) {
+        let date = new Date();
+        // let dateTS = firebase.firestore.Timestamp.fromDate(date)
+        let obj =
+        {
+            message: poruka,
+            username: this._username,
+            room: this._room,
+            createdAt: firebase.firestore.Timestamp.fromDate(date)
+        }
 
+        //da sacuvam dokument u db
+        let response = await this.chats.add(obj);
+        return response; // vracam promise i mogu za njega da kazem . then i . catch
 
+        // this.chats
+        //     .add(obj)
+        //     .then(() => {
+        //         console.log(`uspesno dodat chat`);
+        //     })
+        //     .catch(err => {
+        //         console.log(`Doslo je do greske ${err}`);
+        //     })
+    }
+
+    // getChats(callback)
+    // {
+    //     this.chats
+    //     .onSnapshot(snapshot=>
+    //         {
+
+    //         })
 }
-
-
-// duzina username-a treba da bude izmedju 2-10 (mora samo od karaktera i brojeva , ali ne sme praznine i tabove, ako ima greska mora poruka)
-
-// za chats ima specificnost  da dobija vrednost chatova iz baze
-
+}
 export default Chatroom;
+
+// let random = new Chatroom(`JS`, `Miki`);
+// random.addChat(`porukica`)
