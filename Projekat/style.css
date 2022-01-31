@@ -7,7 +7,9 @@ div .sobe{
     width: 24.5%;
 }
 
-
+form{
+    margin: 10px;
+}
 
 .inputi {
     position: relative;
