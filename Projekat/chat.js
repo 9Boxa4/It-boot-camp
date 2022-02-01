@@ -70,7 +70,7 @@ class Chatroom {
                     //ispisati dokumente koji su dodati u bazu
                     if (change.type == "added") 
                     {
-                        callback(change.doc.data().room); // prosledjivanje dokumenta na ispis (ispis realizujemo, kada realizujemo callback)
+                        callback(change.doc.data()); // prosledjivanje dokumenta na ispis (ispis realizujemo, kada realizujemo callback)
                     }
                 })
             })

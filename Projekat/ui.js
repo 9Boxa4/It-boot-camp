@@ -15,11 +15,22 @@ class ChatUI
         return this._lista;
     }
 
-    templateLI(poruka)
+    // templateLI(data)
+    // {
+    //     let li = document.createElement(`li`);
+    //     li.innerHTML = data();
+    //     this.lista.appendChild(li)
+    // }
+    templateLi(data)
     {
-        let li = document.createElement(`li`);
-        li.innerHTML = `${poruka}`
-        this.lista.appendChild(li)
+        let htmlLi =
+        `<li>
+            ${data.username} : ${data.message} <br> ${data.createdAt}
+        </li>`;
+
+        this.lista.innerHTML += htmlLi;
+
+
     }
 }
 
