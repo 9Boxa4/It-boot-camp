@@ -1,4 +1,7 @@
 import Chatroom from "./chat.js";
+import ChatUI from "./ui.js";
+
+
 
 
 let obj1 = new Chatroom(`general`, `Janko`)
@@ -23,3 +26,9 @@ let obj3 = new Chatroom(`JS`, `Stefan`)
 obj1.getChats(d => {
     console.log(d);
 });
+
+let lista = document.querySelector(`#ispisPor`)
+let is = new ChatUI(lista)
+
+// console.log(lista);
+// console.log(is.lista);

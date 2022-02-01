@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="container">
     <header>
         <h1>ItBootcamp Chat</h1>
         <h2>Chose a chatroom</h2>
@@ -40,9 +41,9 @@
 
     <!-- za prikaz poruka paragraf -->
     <section>
-        <p id="ispisPor">
+        <ul id="ispisPor">
 
-        </p>
+        </ul>
     </section>
 
     <form class="inputi" id="">
@@ -54,7 +55,8 @@
         <input type="text" name="update" id="update">
         <input type="submit" value="update" class="btn" id="btnUpdate">
     </form>
-
+<!-- kraj container div-a -->
+</div>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js">
     </script>
 
@@ -76,7 +78,7 @@
         let db = firebase.firestore();
     </script>
 
-    <script type="module" src="script.js"></script>
+    <script type="module" src="app.js"></script>
 
 </body>
 
