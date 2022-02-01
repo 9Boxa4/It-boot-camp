@@ -15,7 +15,7 @@ class Chatroom {
         return this._room;
     }
 
-    //username setter i getter
+    //username setter i getter 
 
     set username(us) {
         let tr = us.trim().replace(/\S/g, "").length
@@ -57,18 +57,20 @@ class Chatroom {
     }
 
     //Metod koji prati promene u bazi i vraca poruke
-    getChats(callback) {
+    getChats(callback) 
+    {
         this.chats
+            .where(`room`, `==`, this.room)
+            .orderBy("createdAt")
             .onSnapshot(snapshot => {
                 snapshot.docChanges().forEach(change => {
                     // if (change.type == "added") {
                     //     console.log(`Promena u bazi`);
                     // }
-
-
                     //ispisati dokumente koji su dodati u bazu
-                    if (change.type == "added") {
-                        callback(change.doc.data()); // prosledjivanje dokumenta na ispis (ispis realizujemo, kada realizujemo callback)
+                    if (change.type == "added") 
+                    {
+                        callback(change.doc.data().room); // prosledjivanje dokumenta na ispis (ispis realizujemo, kada realizujemo callback)
                     }
                 })
             })
