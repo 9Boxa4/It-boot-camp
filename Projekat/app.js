@@ -42,3 +42,8 @@ obj1.getChats(d=>
     {
         is.templateLi(d);
     })
+
+//     obj1.getChats(d=>
+//         {
+//             formating(d)
+//         })

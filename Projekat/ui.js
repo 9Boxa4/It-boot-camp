@@ -21,17 +21,30 @@ class ChatUI
     //     li.innerHTML = data();
     //     this.lista.appendChild(li)
     // }
+
+
+    formating(data)
+    {
+        let formatDan = data.getDay()
+        let formatMesec= data.getMonth()+1;
+        let formatGodina = data.getFullYear();
+        let formatSati = data.getHours();
+        let formatMinuti= data.getMinutes();
+        return `${formatDan}-${formatMesec}- ${formatGodina} ${formatSati} : ${formatMinuti}`;
+    }
+    
     templateLi(data)
     {
-        let htmlLi =
+       let htmlLi =
         `<li>
-            ${data.username} : ${data.message} <br> ${data.createdAt}
+            ${data.username} : ${data.message} <br> ${this.formating(data.createdAt.toDate())} 
         </li>`;
 
         this.lista.innerHTML += htmlLi;
 
-
     }
+
+ 
 }
 
 
