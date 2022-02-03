@@ -7,29 +7,24 @@ let inputSend = document.querySelector(`#send`);
 let lista = document.querySelector(`#ispisPor`);
 
 //Instance klasa
-let obj1 = new Chatroom(`js`, `Janko`);
+let noviLocalUser;
+if(localStorage.username)
+{
+    noviLocalUser = localStorage.username;
+}
+else
+{
+    noviLocalUser ="anonymus"
+}
+
+let obj1 = new Chatroom(`js`, noviLocalUser);
 let is = new ChatUI(lista);
 
-//Postavljanje vrednosti u local storage
-// localStorage.setItem("nazivPromenljiv",5);
-// localStorage.setItem("nazivPromenljiv",6);
-// localStorage.setItem("nazivPromenljiv","Test string");
-localStorage.setItem("x",7);
-// localStorage.setItem("y",10);
 
-// uzimanje vrednosti iz local storage `localStorage.x`
-let z= localStorage.x + localStorage.y;
-console.log(z);
-console.log(localStorage.x);
-// if(localStorage.x)
+// let checkUser = ()=>
 // {
-//     console.log("X postoji");
+//     if(localStorage.username)
 // }
-// else
-// {
-//     console.log(`X ne postoji`);
-// }
-
 
 // obj1.addChat(`bla bla`)
 //     .then(() => {
@@ -68,13 +63,18 @@ formSend.addEventListener(`submit`, (event) =>
 });
 
 //updateovanje imena
-        let formaUpdate = document.querySelector(`#updateForm`)
-        let inputUpdate = document.querySelector(`#update`)
+        let formaUpdate = document.querySelector(`#updateForm`);
+        let inputUpdate = document.querySelector(`#update`);
+        
         formaUpdate.addEventListener(`submit`, event=>
         {
             event.preventDefault();
             let newUsername = inputUpdate.value;
-            obj1.username = newUsername;
+                obj1.username = newUsername;
+             noviLocalUser= localStorage.setItem("username",newUsername);
             formaUpdate.reset();
+            
 
         })
+
+    
