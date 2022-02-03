@@ -30,6 +30,12 @@ class ChatUI
         let formatGodina = data.getFullYear();
         let formatSati = data.getHours();
         let formatMinuti= data.getMinutes();
+
+         formatDan = String(formatDan).padStart(2,"0") 
+         formatMesec = String(formatMesec).padStart(2,"0") 
+         formatSati = String(formatSati).padStart(2,"0") 
+         formatMinuti = String(formatMinuti).padStart(2,"0") 
+        
         return `${formatDan}-${formatMesec}- ${formatGodina} ${formatSati} : ${formatMinuti}`;
     }
     

@@ -1,24 +1,105 @@
 *{
-    margin: 0 ;
+    margin: 0 auto ;
     padding: 0 ;
     box-sizing: border-box;
 }
 
-/* #container {
-    margin:auto 0;
-} */
+body{
+    background-image: url(https://img.freepik.com/free-photo/beautiful-white-cloud_74190-3975.jpg?size=626&ext=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    margin:0 auto;
+    width: 500px;
+}
+#prvoKrilo
+{
+    /* width: %;
+    height: 10px; */
+    transform: scale(.3);
+}
+#drugoKrilo
+{
+    transform: scale(.3);
+}
 
 header {
     text-align: center;
+    /* background-color: orange; */
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 20px;
+}
+header h1::before
+{
+    content:url(/fotke/krilo-removebg-preview.png); 
+    transform: scale(.3);
+    position: absolute;
+    top: -36%;
+    left: 15%;
+    max-width: 100%;
+} 
+
+ header h1::after
+{
+    content:url(/fotke/krilo-removebg-preview.png); 
+    
+    transform: scale(.3) scaleX(-1);
+    position: absolute;
+    top: -36%;
+    left: 46%;
+    max-width: 100%;
     
 }
 
-div .sobe{
+/* div .sobe{
     width: 24.5%;
+} */
+ul{
+    list-style: none;
+    /* background-color: green; */
+    opacity: 0.8;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    padding-left: 65px;
+    /* text-align: center; */
+}
+
+ul li{
+    /* display: inline-block; */
+    background-color: orange ;
+    margin: 12px;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 300px;
+    text-align: center;
 }
 
 #ispisPor{
     text-align: center;
+}
+nav{
+    padding-left: 40px;
+}
+
+nav button{
+    display: inline-block;
+    margin: 5px;
+    font-weight: 730;
+    
+}
+
+nav button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transition-duration: 1000ms;
+    
+    
 }
 
 form{
@@ -26,36 +107,59 @@ form{
     text-align: center;
 }
 
-.inputi {
-    position: relative; 
-}
+
 
 input[type="text"]
 {
-    border-radius: 4px;
-    box-shadow: 1px 2px #888888 ; 
+    border-radius: 10px;
+    /* box-shadow: 1px 2px #888888 ;  */
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    padding: 7px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid orange 3px;
+    outline-style: none;
     
 }
 
 button{
-    background-color: rgb(221, 120, 221);
+    /* background-color: rgb(221, 120, 221); */
+    background-color: orange;
     border-radius: 7px;
     padding: 2px;
-    box-shadow: 4px 4px #888888 ; 
+    box-shadow: 4px 4px #d11e1e ; 
     
 }
 
 input[type="submit"]
 {
-    background-color: rgb(221, 120, 221);
+    /* background-color: rgb(221, 120, 221); */
+    background-color: orange;
     border-radius: 7px;
-    padding: 2px;
-    box-shadow: 4px 4px #888888 ; 
+    padding: 4px;
+    box-shadow: 2px 2px #d11e1e ; 
+    font-weight: 730;
+}
+
+#sendForm{
+    margin-left: -2px;
 }
 
  /* grid sistem */
 
- /* .col-1 {
+
+ .row{
+    width: 100%;
+    overflow: hidden;
+}
+
+[class*="col-"] {
+        float: left;
+    }
+
+    @media only screen and (min-width: 601px){
+ .col-1 {
     width: 8.33%;
 }
 .col-2 {
@@ -91,10 +195,10 @@ input[type="submit"]
 .col-12 {
     width: 100%;
 }
+    }
+/* mobile version */
 
-.row{
-    width: 100%;
-
-[class*="col-"] {
-        float: left;
-    } */
+@media only screen and (max-width: 600px){
+    [class*="col-"] {
+        width: 100%;
+    }

@@ -10,7 +10,7 @@ let obj3 = new Chatroom(`JS`, `Stefan`)
 
 // console.log(obj1.username, obj1.room);
 
-// obj1.addChat(`await testiranje`)
+// obj1.addChat(`bla bla`)
 //     .then(() => {
 //         console.log(`uspesno dodat chat`);
 //     })
@@ -47,3 +47,45 @@ obj1.getChats(d=>
 //         {
 //             formating(d)
 //         })
+
+let formSend = document.querySelector(`#sendForm`);
+let inputSend = document.querySelector(`#send`);
+
+formSend.addEventListener(`submit`, (event) =>
+{
+    event.preventDefault();
+    
+    let poruka = inputSend.value;
+    obj1.addChat(poruka)
+    .then(() => {
+        inputSend.value = "";
+        console.log(`uspesno dodat chat`);
+    })
+    .catch(err => {
+        console.log(`Doslo je do greske ${err}`);
+    })
+    //     obj1.addChat(poruka)
+//    .then(()=>
+//    {
+//        console.log(`Uspesno dodata poruka`);
+//    })
+//    .catch(err=>
+//     {
+//         console.log(`Doslo je do greske ${err}`);
+//     })
+
+
+});
+
+
+        let formaUpdate = document.querySelector(`#updateForm`)
+        let inputUpdate = document.querySelector(`#update`)
+        console.log(inputUpdate);
+        formaUpdate.addEventListener(`submit`, event=>
+        {
+            event.preventDefault();
+            let newUsername = inputUpdate.value;
+            obj1.username = newUsername;
+            formaUpdate.reset();
+
+        })

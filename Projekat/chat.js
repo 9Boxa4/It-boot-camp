@@ -44,7 +44,8 @@ class Chatroom {
 
         //da sacuvam dokument u db
         let response = await this.chats.add(obj);
-        return response; // vracam promise i mogu za njega da kazem . then i . catch
+        return response; 
+        // vracam promise i mogu za njega da kazem . then i . catch
 
         // this.chats
         //     .add(obj)
@@ -75,6 +76,13 @@ class Chatroom {
                 })
             })
     }
+
+    // updateUser()
+    // {
+        
+        
+    // }
+
 }
 export default Chatroom;
 
