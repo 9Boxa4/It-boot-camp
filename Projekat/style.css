@@ -112,7 +112,8 @@ nav button:hover{
 
 .trash:hover{
 cursor: pointer;
-font-size: 1.6rem;
+transform: scale(1.6,1.6);
+transition: 700ms;
 font-weight:700;
 color: red;
 }
@@ -239,6 +240,8 @@ input[type="submit"]:hover
     margin-top:20px;
     max-height: 300px;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse
 }
 .section::-webkit-scrollbar-track
 {
