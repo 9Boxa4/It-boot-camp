@@ -11,53 +11,53 @@
 
 <body>
     <div id="container" class="row">
-    <header class="row">
-        <!-- <img class="" src="fotke/krilo-removebg-preview.png" id="prvoKrilo"> -->
-        <h1 class ="col-12">ItBootcamp Chat</h1>
-        <!-- <img class="" src="fotke/krilo-removebg-preview.png" id="drugoKrilo"> -->
-        
-        <h2 class="col-12">Chose a chatroom</h2>
+    
+        <header class="row">
+        <h1 class ="col-12"> <img src="./fotke/krilo-removebg-preview.png" id="levoKrilo">ItBootcamp Chat<img src="./fotke/krilo-removebg-preview.png" id="desnoKrilo"></h1>
+        <h2 class="col-12">Choose a chatroom</h2>
     </header>
 
-
-
-
-    <nav class = "row">
-        <!-- <ul> -->
-        <!-- <li> -->
-        <button class="col-5">#General</button>
-        <!-- </li> -->
-
-        <!-- <li> -->
-        <button class="col-5">#JS</button>
-        <!-- </li>
-        <li> -->
-
-        <button class="col-5">#homework</button>
-        <!-- </li>
-
-        <li> -->
-        <button class="col-5">#tests</button>
-        <!-- </li>
-    </ul> -->
+    <nav class = "row nav_mobile">
+        <button class="col-5 btn-nav" id="general" >#General</button>
+        <button class="col-5 btn-nav" id="js">#JS</button>
+        <button class="col-5 btn-nav" id="homework">#homework</button>
+        <button class="col-5 btn-nav" id="tests">#tests</button>
     </nav>
 
     <!-- za prikaz poruka paragraf -->
-    <section class="row">
+    <section class="row section">
         <ul id="ispisPor" class="col-12">
 
         </ul>
     </section>
 
-    <form class="inputi " id="sendForm">
-        <input type="text" name="send" id="send" placeholder="Unesite poruku">
+    
+    <form action="" id="updateColorForm" class="forms">
+        <input type="color" id="colorPicker" value="#ffffff" class="inputs">
+        <input type="submit" value="Update color" class="btn" id="btnUpdateColor">
+    </form>
+
+    <form action="" id="formDates" class="forms">
+        <div class="inputs">
+            <input type="datetime-local" id="date1"><input type="datetime-local" id="date2">
+        </div>
+        <input type="submit" value="set dates" class="btn">
+    </form>
+
+    <form class="inputi forms" id="sendForm">
+        <!-- <input type="text" name="send" id="send" placeholder="Unesite poruku"> pre je bio input text, sada --> 
+        <textarea name="send" id="send" cols="21" rows="1.8" placeholder="Unesite poruku" class="inputs"></textarea>
         <input type="submit" value="send" class="btn" id="btnSend">
     </form>
 
-    <form class="inputi" id ="updateForm">
+    <form class="inputi forms" id ="updateForm">
         <input type="text" name="update" id="update" placeholder="update">
         <input type="submit" value="update" class="btn" id="btnUpdate">
     </form>
+    <div id="updateIspis">
+         
+    </div>
+  
 <!-- kraj container div-a -->
 </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js">
