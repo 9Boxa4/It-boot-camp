@@ -1,0 +1,38 @@
+
+table {
+    border: 0.5px gray solid;
+    margin: 5px;
+    border-collapse: collapse;
+        border: 1px solid black;
+}
+
+th,td {
+    border: 1px gray solid ;
+    margin: 1px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.tab_1 tr:nth-child(3) {
+    background-color: yellow;
+}
+
+.tab_1 tr:nth-child(odd){
+   font-style: italic;
+}
+
+.tab_2 tr td:nth-child(3) {
+background-color: yellow;
+}
+
+.tab_2 tr th:nth-child(3) {
+    background-color: yellow;
+    }
+
+.tab_2 tr:nth-child(even):hover{
+    background-color: yellow;
+}
+.tab_2  tr:nth-child(3n){
+    color:blue
+}
+
