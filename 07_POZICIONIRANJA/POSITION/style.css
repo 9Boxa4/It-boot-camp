@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+header{
+    background-color: aqua;
+    position: fixed;
+    top:0 ;
+    width:100%;
+    z-index: 100;
+    
+}
+
+section{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    /* z-index: 100; */
+    background-color: burlywood;
+    margin: 10px;
+    width: 400px;
+    height: 250px;
+    
+}
+
+section img{
+    position: absolute;
+    top:50px;
+    left:20px;
+    width : 150px;
+    height: 150px;
+
+}
+section p{
+    position: absolute;
+    top: 50px;
+    right:10px;
+
+}
+
+
+section a{
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+}
