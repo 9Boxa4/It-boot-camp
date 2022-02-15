@@ -1,0 +1,20 @@
+[
+    {
+        "imePrezime" : "Marko Markovic",
+        "visina" : 1.99,
+        "timovi" : ["Bajern","Partizan","Zvezda"]
+    },
+    
+    {
+            "imePrezime" : "Zoran Zokic",
+            "visina" : 2.05,
+            "timovi" : ["Zvezda","Hemofarm","Knicks"]
+    } 
+    ,
+    {
+        "imePrezime" : "Micheal Jordan",
+            "visina" : 2.15,
+            "timovi" : ["Chicago","Lakers","Knicks","Boston"]
+    }
+    
+]
