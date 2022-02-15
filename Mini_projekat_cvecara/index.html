@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        h2{
+            color:purple;
+            margin: 15px 0;
+        }
+        .cvece {
+            margin-top:5px ;
+        }
+
+       form{
+            width: 600px;
+            margin:75px 450px;
+       }
+
+       input[type= checkbox]{
+        margin-top: 7px;
+       }
+       input[type= radio]
+       {
+           margin-top: 5px;
+       }
+
+       button{
+           margin-top: 15px;
+       }
+       #popust
+       {
+           color: purple;
+           font-size: 1.3rem;
+           font-weight: bold;
+       }
+
+       #final{
+            color: purple;
+            font-size: 1.3rem;
+       }
+
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <h2>Odaberite cvece</h2>
+        <div class="cvece">
+            <input type="number" name="" id="ruze" placeholder="Cena po cvetu je 150 din"> <b>Ruze</b> 
+        </div>
+
+        <div class="cvece">
+            <input type="number" name="" id="ljiljani" placeholder="Cena po cvetu je 120 din">  <b>Ljiljani</b>
+        </div>
+
+        <div class="cvece">
+            <input type="number" name="" id="gerberi" placeholder="Cena po cvetu je 70 din"> <b>Gerberi </b>
+        </div>
+
+        <h2>Dodatni Pokloni:</h2>
+
+        <div>
+            <input type="checkbox" name=""  class ="chb" value="" id="bombonjera" >  <b>Bombonjera</b>
+        </div>
+
+        <div>
+            <input type="checkbox" name=""  class ="chb" value="" id="cokolada" > <b>Cokolada</b>
+        </div>
+        
+        <div>
+            <input type="checkbox" name=""  class ="chb" value="sampanjac" id="sampanjac">  <b>Sampanjac</b>
+        </div>
+        
+        <h2>Placanje:</h2>
+        
+        <div>
+            <input type="radio" name="placanje" id="kes" value = "kes" required checked> <b>Kes</b>
+        </div>
+
+        <div>
+            <input type="radio" name="placanje" id="kartica" value = "kartica"> <b>Kartica</b>
+        </div>
+
+        <button id= "izracunaj">Izracunaj</button> <button id="Resetuj">Resetuj</button>
+
+        <h2>Vasa Porudzbina:</h2>
+
+        <div id = "ispisCvece">
+            <p id="ispis1"></p>
+            <p id="ispis2"></p>
+            <p id="ispis3"></p>
+        </div>
+
+        <p id="bomb"></p>
+        <p id="coko"></p>
+        <p id="samp"></p>
+
+        <p id="popust"></p>
+        <p id="final"></p>
+
+    </form>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
