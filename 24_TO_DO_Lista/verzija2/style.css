@@ -1,0 +1,45 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+form{
+    width:250px;
+    background-color: white;
+}
+
+h2{
+    color:lightblue;
+    margin-left:-35px
+}
+
+ul{
+    list-style: none;
+    overflow: hidden;
+   
+
+}
+ul li{
+    background-color: lightblue;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 10px;
+    width: 200px;
+    margin-left: -45px;
+    /* text-decoration: line-through; */
+}
+
+ul li:hover{
+    background-color: rgb(40, 78, 148);
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
+
+#dugme{
+    margin-top: 5px;
+    background-color: lightblue;
+    margin-left:50px;
+    
+}
+

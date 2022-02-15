@@ -1,0 +1,25 @@
+h2{
+    color:lightblue
+}
+
+ul{
+    list-style: none;
+    overflow: hidden;
+
+}
+ul li{
+    background-color: lightblue;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 10px;
+    width: 200px;
+    /* text-decoration: line-through; */
+}
+
+ul li:hover{
+    background-color: rgb(40, 78, 148);
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
